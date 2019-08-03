@@ -1,0 +1,157 @@
+.row-box {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.container {
+	width: 1190px;
+	margin: 0 auto;
+}
+
+.center-box {
+	/*width: 700px;*/
+	margin: 0px auto;
+}
+
+body {
+	width:100%;
+    height:100%;
+    background: url( ../image/backGroundImageLong.jpg );
+    background-size:cover;     /*这里设置了背景图片为覆盖，以填满整个容器*/
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+header.header-box {
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+header.header-box>.container>.center-box>.cell-box {
+	float: left;
+	padding: 15px;
+}
+
+header.header-box>.container>.center-box>.cell-box:hover {
+	background-color: rgba(89,0,255,0.7);
+}
+
+header.header-box>.container>.center-box>.cell-box>a {
+	font-size: 14px;
+	color: white;
+}
+
+.goods-box {
+	width: 750px;
+	padding: 0px 15px;
+	margin-top: 15px;
+}
+
+.cell-box-main {
+	padding: 19px 19px 20px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	background-color: rgba(255,255,255, 0.4);
+	border-radius: 10px;
+	box-shadow: #20202F 0px 0px 10px 1px;
+	transition: all 0.40s;
+	position: relative;
+}
+
+.cell-box-main:hover {
+	box-shadow: #20202F 0px 0px 30px 5px;
+}
+
+.cell-box-main>.title-box {
+	margin: 0px auto;
+	margin-top: 15px;
+	/*border-radius: 10px;
+	background-color: #48CFE5;
+	color: white;
+	font-size: 20px;*/
+}
+
+.cell-box-main>.title-box>a {
+	border-radius: 10px;
+	background-color: #48CFE5;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.cell-box-main>.row-box>.hot-show {
+	padding: 4px;
+	font-size: 12px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+	margin-left: 10px;
+	transition: all 0.40s;
+}
+
+.cell-box-main>.row-box>.hot-show:hover {
+	background-color: #D9534F;
+}
+
+
+.cell-box-main>.data-land {
+	width: 70px;
+	height: 70px;
+	top: -20px;
+	left: -20px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #6B69D6;
+	color: white;
+}
+
+
+.cell-box-main>.row-box>.big-img-box {
+	margin: 0 auto;
+	width: 680px;
+	height: 510px;
+	padding: 15px;
+	background-color: rgba(255,255,255, 0.4);
+	border-radius: 5px;
+}
+
+.cell-box-main>.row-box>.big-img-box>a {
+	position: relative;
+	/*以relative为单位影响*/
+	display: block;
+	overflow: hidden;
+	height: 510px;
+}
+
+.cell-box-main>.row-box>.big-img-box:hover>a>.inner-font-box {
+	transform: scale(1);
+	visibility: visible;
+}
+
+.cell-box-main>.row-box>.big-img-box>a>.inner-font-box {
+	position: absolute;
+	width: 680px;
+	height: 510px;
+	transform: scale(2);
+	transition: transform 0.50s;
+	background-color: rgba(0,0,0,0.3);
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 2;
+}
+
+.cell-box-main>.row-box>.big-img-box>a>.img>img {
+	transition: all 0.50s;
+	width: 100%;
+}
+
+.cell-box-main>.row-box>.big-img-box:hover>a>.img>img {
+	transform: scale(1.5);
+}

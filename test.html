@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.block {
+				width: 200px;
+				height: 200px;
+				background: brown;
+				cursor: pointer;
+				/*改变放上的指针样式*/
+				transition: 0.8s;
+			}
+			
+			.block:hover {
+				transform: rotateX(180deg);
+			}
+			
+			.img-test {
+				position: relative;
+				width: 500px;
+				border: 1px solid red;
+				overflow: hidden;
+			}
+			
+			.img-test:hover>.info {
+				transform: scale(1);
+			}
+			
+			.img-test>.info {
+				position:absolute;
+				z-index: 2;
+				width:100%;
+				transform: scale(3);
+				transition: all 0.25s;
+			}
+			
+			.img-test>.img {
+				transition: all 0.25s;
+			}
+			
+			.img-test:hover>.img {
+				transform: scale(2);
+			}
+			/*.img-test>img {
+				position: absolute;
+			}
+			
+			.img-test>img:hover {
+				transform: scale(2);
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<div class="block">
+
+		</div>
+		<div class="">
+
+		</div>
+		<div class="img-test">
+			<!--<a href="https://www.mmgal.com/guanyuzhanchangdeyizegonggao.html" target="_blank">-->
+				<div class="info">
+					<p>2018年11月起，本站站长忧郁的弟弟已永（更）远（改）离（名）到的是错误ip，已更换新域名mmgal.com2018-12-21三次元家事繁忙，网站资源暂停更新&nbsp;2019-04-15继续咕咕咕&nbsp;2019-05-02继续咕咕咕&nbsp;2019-06-13最近各位还好吗...</p>
+				</div>
+				<div class="img">
+					<img src="image/chang-pciture.png" />
+				</div>
+				
+			<!--</a>-->
+		</div>
+	</body>
+
+</html>
