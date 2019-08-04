@@ -37,9 +37,9 @@ html {
 }
 
 body {
-	font-family: "Microsoft Yahei",Helvetica,Arial,sans-serif;
-    font-size: 12px;
-    color: #3d4450;
+	font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #3d4450;
 }
 
 a {
@@ -48,5 +48,10 @@ a {
 }
 
 ul {
-	list-style:none;
+	list-style: none;
 }
+
+/*
+p {
+	white-space: nowrap;
+}*/
